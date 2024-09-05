@@ -1,0 +1,23 @@
+[
+    {
+        "username": "mohamed",
+        "password": "password1231",
+        "role": "teacher",
+        "teacher_id": 1
+    },
+    {
+        "username": "khater",
+        "password": "password1234",
+        "role": "teacher",
+        "teacher_id": 2
+    },
+    {
+        "username": "admin",
+        "password": "adminpass",
+        "role": "admin"
+    },
+    {
+       "2": {"user": "اسم المعلم 1"},
+       "teacher_id_2": {"user": "اسم المعلم 2"}
+   }
+]

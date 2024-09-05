@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+*{
+          font-family: "Cairo", sans-serif;
+
+}
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    font-family: "Cairo", sans-serif;
+
+}
+
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    background-color: #009e69;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    display: block;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.sidebar a:hover {
+    background-color: #c69023;
+}
+
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    background: #ffffff;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.162);
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px dashed #009e69;
+    color: white;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+form input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #009e69;
+    color: #fff;
+    cursor: pointer;
+}
+/* Add this CSS to your style.css file */
+.teacher-stats {
+    /* background-color: #f9f9f9; */
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.teacher-stats h2 {
+    color: #333;
+    font-size: 1.5em;
+}
+
+.teacher-stats ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.teacher-stats li {
+    margin-bottom: 10px;
+}
+form button:hover {
+    background-color: #c69023;
+}
+span {
+                color: #009e69
+            }
+
+.error {
+    color: red;
+    margin-bottom: 20px;
+}
+
+.success {
+    color: green;
+    margin-bottom: 20px;
+}
+
+.student-select {
+    width: 100%; /* عرض كامل */
+    height: 150px; /* ارتفاع محدد */
+    border: 1px solid #ccc; /* حدود خفيفة */
+    border-radius: 5px; /* زوايا مدورة */
+    padding: 5px; /* حشوة داخلية */
+    font-size: 16px; /* حجم خط مناسب */
+    background-color: #f9f9f9; /* لون خلفية فاتح */
+    transition: border-color 0.3s; /* تأثير انتقال */
+}
+
+.student-select:focus {
+    border-color: #007bff; /* لون الحدود عند التركيز */
+    outline: none; /* إزالة الإطار الافتراضي */
+}
+
+.responsive-table {
+    width: 100%; /* عرض كامل */
+    border-collapse: collapse; /* دمج الحدود */
+    margin-bottom: 20px; /* مسافة أسفل الجدول */
+}
+
+.responsive-table th,
+.responsive-table td {
+    padding: 12px; /* حشوة داخلية */
+    text-align: left; /* محاذاة النص لليسار */
+    border: 1px solid #ddd; /* حدود خفيفة */
+}
+
+.responsive-table th {
+    background-color: #009e69; /* لون خلفية العناوين */
+    color: white; /* لون النص */
+}
+
+.responsive-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* لون خلفية الصفوف الزوجية */
+}
+
+.responsive-table tr:hover {
+    background-color: #e0e0e0; /* لون خلفية عند التمرير */
+}
+
+/* إضافة تنسيق ريسبونسيف */
+@media (max-width: 600px) {
+    .responsive-table,
+    .responsive-table thead,
+    .responsive-table tbody,
+    .responsive-table th,
+    .responsive-table td,
+    .responsive-table tr {
+        display: block; /* عرض ككتل */
+    }
+
+    .responsive-table th {
+        display: none; /* إخفاء العناوين في العرض الصغير */
+    }
+
+    .responsive-table tr {
+        margin-bottom: 15px; /* إضافة مسافة بين الصفوف */
+    }
+
+    .responsive-table td {
+        text-align: right; /* محاذاة النص لليمين */
+        position: relative; /* موضع نسبي */
+        padding-left: 50%; /* إضافة مساحة لعرض البيانات */
+    }
+
+    .responsive-table td::before {
+        content: attr(data-label); /* استخدام البيانات كعنوان */
+        position: absolute; /* موضع مطلق */
+        left: 0; /* محاذاة لليسار */
+        width: 50%; /* عرض 50% */
+        padding-left: 10px; /* حشوة داخلية */
+        font-weight: bold; /* خط عريض */
+        text-align: left; /* محاذاة النص لليسار */
+    }
+}
+
+/* تنسيق الجداول الأخرى */
+.table {
+    width: 100%; /* عرض كامل */
+    border-collapse: collapse; /* دمج الحدود */
+    margin-bottom: 20px; /* مسافة أسفل الجدول */
+}
+
+.table th,
+.table td {
+    padding: 12px; /* حشوة داخلية */
+    text-align: left; /* محاذاة النص لليسار */
+    border: 1px solid #ddd; /* حدود خفيفة */
+}
+
+.table th {
+    background-color: #007bff; /* لون خلفية العناوين */
+    color: white; /* لون النص */
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2; /* لون خلفية الصفوف الزوجية */
+}
+
+.table tr:hover {
+    background-color: #e0e0e0; /* لون خلفية عند التمرير */
+}
+
+/* إضافة تنسيق ريسبونسيف */
+@media (max-width: 600px) {
+    .table,
+    .table thead,
+    .table tbody,
+    .table th,
+    .table td,
+    .table tr {
+        display: block; /* عرض ككتل */
+    }
+
+    .table th {
+        display: none; /* إخفاء العناوين في العرض الصغير */
+    }
+
+    .table tr {
+        margin-bottom: 15px; /* إضافة مسافة بين الصفوف */
+    }
+
+    .table td {
+        text-align: right; /* محاذاة النص لليمين */
+        position: relative; /* موضع نسبي */
+        padding-left: 50%; /* إضافة مساحة لعرض البيانات */
+    }
+
+    .table td::before {
+        content: attr(data-label); /* استخدام البيانات كعنوان */
+        position: absolute; /* موضع مطلق */
+        left: 0; /* محاذاة لليسار */
+        width: 50%; /* عرض 50% */
+        padding-left: 10px; /* حشوة داخلية */
+        font-weight: bold; /* خط عريض */
+        text-align: left; /* محاذاة النص لليسار */
+    }
+}
